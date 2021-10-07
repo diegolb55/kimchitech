@@ -1,0 +1,58 @@
+.abs {
+    position: absolute;
+}
+
+@keyframes Paw-fade {
+    0%{
+        opacity: 0.7;
+    }
+    100%{
+        opacity: 0;
+
+    }
+}
+#art-container {
+    // border: 2px solid black;
+    width: 30%;
+    height: 75%;
+    transform: rotate(-80deg);
+   
+    top: 10%; 
+    right: 150px;
+
+    #paw-one {
+        animation: Paw-fade 3s forwards 0.5s infinite linear;
+        bottom: 0%;
+        left: 0%;
+        transform: rotate(-10deg);
+    }
+    #paw-two {
+        animation: Paw-fade 3s forwards 0.9s infinite linear;
+        bottom: 25%;
+        left: 25%;
+        transform: rotate(20deg);
+    }
+    #paw-three {
+        bottom: 50%;
+        left: 5%;
+        animation: Paw-fade 3s forwards 1.2s infinite linear;
+
+    }
+    #paw-four {
+        bottom: 55%;
+        left: 45%;
+        animation: Paw-fade 3s forwards 1.7s infinite linear;
+        transform: rotate(30deg);
+
+    }
+    #paw-five {
+        top: -10%;
+        left: 35%;
+        animation: Paw-fade 3s forwards 2.1s infinite linear;
+
+    }
+    .paws {
+        height: 150px;
+    }
+    
+}

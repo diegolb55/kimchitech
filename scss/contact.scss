@@ -1,0 +1,141 @@
+$kimchi-brown: #e2a66b;
+// -----------------------
+.abs {
+    position: absolute;
+    // class="abs"
+}
+.rel {
+    position: relative;
+}
+.fixed {
+    position: fixed;
+}
+// -----------------------
+
+body {
+    background: $kimchi-brown;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#back-container {
+    border: 3px solid white;
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    left: 150px;
+    top: 50px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ars {
+        height: 3px;
+        width: 50%;
+        background: white;
+        border-radius: 0px 10px 10px 0px; 
+    }
+    #arrow-o {
+        transform: rotate(-45deg);
+        top: 15px;
+        left: 10px;
+    }
+    #arrow-t {
+        transform: rotate(45deg);
+        top: 30px;
+        left: 10px;
+    }
+
+    &:hover {
+        opacity: .5;
+        .ars {
+            opacity: .5;
+        }
+    }
+}
+#form-container {
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 30px gray;
+    width: 40%;
+    height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+    color: $kimchi-brown;
+    // border: 2px solid blue;
+    text-align: center;
+    top: 10px;
+}
+.label-input {
+    width: 100%;
+    // border: 2px solid black;
+
+    label {
+        // border: 2px solid coral;
+        width: 50%;
+        margin-left: 180px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    input {
+        border: 2px solid red;
+        border-radius: 30px;
+        right: 180px;
+    }
+
+}
+.label-text {
+    bottom: 0px;
+    // border: 2px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 300px;
+
+    label {
+        top: 0px;
+        left: 60px;
+        font-family: 'Open Sans Condensed', sans-serif;
+    }
+    #message{
+        // background: lightblue;
+        border: 2px solid red;
+        resize: none;
+        outline: none;
+        width: 80%;
+        height: 30%;
+        top: 25px;
+
+    }
+}
+
+#submit {
+    color: white;
+    background: $kimchi-brown;
+    bottom: 40px;
+    border: 2px solid #a87b4d;
+    border-radius: 25%;
+    height: 40px;
+    width: 60px;
+
+    &:hover {
+        opacity: 0.7;
+    }
+    &:active {
+        opacity: 0.3;
+    }
+
+
+}

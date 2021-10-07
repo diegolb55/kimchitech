@@ -1,0 +1,192 @@
+.abs {
+  position: absolute;
+}
+
+@-webkit-keyframes Paw-fade {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Paw-fade {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#art-container {
+  width: 30%;
+  height: 75%;
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+  top: 10%;
+  right: 150px;
+}
+
+#art-container #paw-one {
+  -webkit-animation: Paw-fade 3s forwards 0.5s infinite linear;
+          animation: Paw-fade 3s forwards 0.5s infinite linear;
+  bottom: 0%;
+  left: 0%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+#art-container #paw-two {
+  -webkit-animation: Paw-fade 3s forwards 0.9s infinite linear;
+          animation: Paw-fade 3s forwards 0.9s infinite linear;
+  bottom: 25%;
+  left: 25%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#art-container #paw-three {
+  bottom: 50%;
+  left: 5%;
+  -webkit-animation: Paw-fade 3s forwards 1.2s infinite linear;
+          animation: Paw-fade 3s forwards 1.2s infinite linear;
+}
+
+#art-container #paw-four {
+  bottom: 55%;
+  left: 45%;
+  -webkit-animation: Paw-fade 3s forwards 1.7s infinite linear;
+          animation: Paw-fade 3s forwards 1.7s infinite linear;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#art-container #paw-five {
+  top: -10%;
+  left: 35%;
+  -webkit-animation: Paw-fade 3s forwards 2.1s infinite linear;
+          animation: Paw-fade 3s forwards 2.1s infinite linear;
+}
+
+#art-container .paws {
+  height: 150px;
+}
+
+#section-one {
+  width: 100%;
+  height: 100vh;
+  background: #9fd39f;
+  background: white;
+}
+
+#navbar {
+  z-index: 9999;
+  width: 30%;
+  height: auto;
+  right: 200px;
+  top: 10px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+#navbar #item-container {
+  list-style: none;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links {
+  height: 30px;
+  width: 33%;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.nav-links p {
+  height: 30px;
+  color: black;
+  font-family: 'Hahmlet', serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav-links p::before {
+  content: '';
+  display: block;
+  background: #9fd39f;
+  height: 2px;
+  width: 20px;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: width 1s, background 1s;
+  transition: width 1s, background 1s;
+}
+
+.nav-links p:hover::before {
+  background: red;
+  width: 100%;
+}
+
+#text-container {
+  border-bottom: 2px solid #e2a66b;
+  width: auto;
+  top: 150px;
+  left: 100px;
+}
+
+@-webkit-keyframes Kimchi {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #e2a66b;
+  }
+  100% {
+    color: #c7c73d;
+  }
+}
+
+@keyframes Kimchi {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #e2a66b;
+  }
+  100% {
+    color: #c7c73d;
+  }
+}
+
+#text-container #kimchers {
+  font-size: 200px;
+  font-weight: bold;
+  border: 2px solid white;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Anton', sans-serif;
+  -webkit-animation: Kimchi 3s alternate infinite linear;
+          animation: Kimchi 3s alternate infinite linear;
+}
+
+#text-container #subtitle {
+  font-family: 'Hahmlet', serif;
+  width: auto;
+  bottom: 0px;
+  left: 15px;
+  -webkit-animation: Kimchi 3s alternate infinite linear;
+          animation: Kimchi 3s alternate infinite linear;
+}
+/*# sourceMappingURL=section-one.css.map */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="dist/css/contact.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="contact_handler.js"></script>
+</head>
+<body>
+
+    <a href="index.html">
+        <div id="back-container" class="abs">
+            <div id="arrow-o" class="ars abs"></div>
+            <div id="arrow-t" class="ars abs"></div>
+            
+        </div>
+    </a>
+    
+    
+    <form id="form-container" class="abs" action="https://formsubmit.co/diegolugobendezu@gmail.com" method="POST">
+        
+        <h1 class="abs">Contact Page</h1>
+        <div class="label-input abs" style="top: 150px;">
+            <label for="name">name:</label>
+            <input type="text" name="name" class="abs" required>
+        </div>
+        <div class="label-input abs" style="top: 200px;">
+            <label for="email">email:</label>
+            <input type="email" name="email" placeholder="Email Address" class="abs" required>
+        </div>
+        <div class="label-input abs" style="top: 250px;" >
+            <label for="subject">subject:</label>
+            <input type="text" name="subject" class="abs" required>
+        </div>
+        <div class="label-text abs" >
+            <label for="message" class="abs">message:</label>
+            <textarea class="abs" id="message" name="message" rows="4" cols="50"></textarea>
+        </div>
+        <button id="submit" type="submit" class="submit abs">send</button>
+    </form>
+    
+</body>
+</html>

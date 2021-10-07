@@ -1,0 +1,76 @@
+.abs {
+  position: absolute;
+}
+
+@-webkit-keyframes Paw-fade {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes Paw-fade {
+  0% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#art-container {
+  width: 30%;
+  height: 75%;
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+  top: 10%;
+  right: 150px;
+}
+
+#art-container #paw-one {
+  -webkit-animation: Paw-fade 3s forwards 0.5s infinite linear;
+          animation: Paw-fade 3s forwards 0.5s infinite linear;
+  bottom: 0%;
+  left: 0%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+#art-container #paw-two {
+  -webkit-animation: Paw-fade 3s forwards 0.9s infinite linear;
+          animation: Paw-fade 3s forwards 0.9s infinite linear;
+  bottom: 25%;
+  left: 25%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+#art-container #paw-three {
+  bottom: 50%;
+  left: 5%;
+  -webkit-animation: Paw-fade 3s forwards 1.2s infinite linear;
+          animation: Paw-fade 3s forwards 1.2s infinite linear;
+}
+
+#art-container #paw-four {
+  bottom: 55%;
+  left: 45%;
+  -webkit-animation: Paw-fade 3s forwards 1.7s infinite linear;
+          animation: Paw-fade 3s forwards 1.7s infinite linear;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+#art-container #paw-five {
+  top: -10%;
+  left: 35%;
+  -webkit-animation: Paw-fade 3s forwards 2.1s infinite linear;
+          animation: Paw-fade 3s forwards 2.1s infinite linear;
+}
+
+#art-container .paws {
+  height: 150px;
+}
+/*# sourceMappingURL=pawArt.css.map */

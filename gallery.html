@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <!-- main stylesheet gallery.css -->
+    <link rel="stylesheet" href="dist/css/gallery.css">
+    <link rel="stylesheet" href="dist/css/carousel.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="fixed">
+        <ul id="item-container">
+            <li class="nav-links rel" id="page-three"><a href="index.html"><p>Home</p></a></li>
+            <li class="nav-links rel" id="page-two"><a href="gallery.html"><p>Gallery</p></a></li>
+            <li class="nav-links rel" id="page-one"><a href="contact.html"><p>Contact</p></a></li> 
+        </ul>
+    </nav>
+    
+    <h1 class="flex-center abs"> Gallery</h1>
+        
+    
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="./images/galleryPics/k9.jpg" style="width: 100%;">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="./images/galleryPics/k11.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="./images/galleryPics/k3.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="./images/galleryPics/k4.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="./images/galleryPics/k10.jpg" style="width:100%">
+        </div>
+  
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="./images/galleryPics/k6.jpg" style="width:100%">
+        </div>
+  
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+  
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k9.jpg" style="width:100%" onclick="currentSlide(1)" alt="Kimchi Trip">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k11.jpg" style="width:100%" onclick="currentSlide(2)" alt="Sister">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Love">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Always Playing">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k10.jpg" style="width:100%" onclick="currentSlide(5)" alt="Crusinng around">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="./images/galleryPics/k6.jpg" style="width:100%" onclick="currentSlide(6)" alt="More tug of War">
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="scroll.js"></script>
+    <script src="carousel_handler.js"></script>
+</body>
+</html>
