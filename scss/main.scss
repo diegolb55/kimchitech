@@ -9,19 +9,29 @@
 
 // Scroll Stuff
 .scroll-down #navbar {
-    transform: translate3d(0, -250%, 0);
+    transform: translate3d(0, -150%, 0);
 }
 .scroll-up #navbar {
-    transform: translate3d(0, 250%, 0);
+    transform: translate3d(0, 150%, 0);
 }
 // -----------------------
-body{
-    height: 300vh;
-    
+body, html{
+    width: 100vw;
     margin: 0;
     padding: 0;
-    background: white;
+    
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
+    overflow-x: hidden;
+
+}
+#pagewrapper {
+    
+    height: 300vh;
+    width: 100%;
+    background: white;
     
 
 }

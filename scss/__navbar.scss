@@ -8,7 +8,7 @@
     transition: all 1s;
 
     position: fixed;
-    right: 10%;
+    right: 10px;
     top: 10px;
     
     
@@ -22,7 +22,7 @@
     
 }
 .nav-links {
-     a{
+     a {
          text-decoration: none;
      }
     // border: 1px solid red;
@@ -61,11 +61,12 @@
                 width: 100%;
             }
         }
-      
     }
-
-    
-
-
-
+}
+@media only screen and (max-width: 1200px){
+    #navbar {
+        border: 2px solid green;
+        display: block;
+        margin: 0 20%;
+    }
 }

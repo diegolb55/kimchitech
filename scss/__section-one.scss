@@ -1,6 +1,7 @@
 $kimchi-brown: #e2a66b;
+
 #section-one {
-    // border: 10px solid black;
+    border: 10px solid black;
     width: 100%;
     height: 100vh;
     
@@ -63,12 +64,16 @@ $kimchi-brown: #e2a66b;
 @media only screen and (max-width: 1200px){
     #section-one {
         flex-direction: row;
+
         #text-container {
             height: 30vh;
         }
         #kimchers {
             text-align: center;
             font-size: 6rem;
+        }
+        #subtitle {
+            text-align: center;
         }
         #art-container {
             height: 40vh;
