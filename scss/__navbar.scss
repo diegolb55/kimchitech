@@ -1,19 +1,16 @@
-@import 'pawArt';
-
-#section-one {
-    width: 100%;
-    height: 100vh;
-    background: rgb(159, 211, 159);
-    background: white;
-}
-
 #navbar {
+    // border: 2px solid black;
     z-index: 9999;
     width: 30%;
+    min-width: 200px;
     height: auto;
-    right: 200px;
-    top: 10px;
+    
     transition: all 1s;
+
+    position: fixed;
+    right: 10%;
+    top: 10px;
+    
     
     #item-container {
         list-style: none;
@@ -34,6 +31,7 @@
     margin-left: 3px;
     margin-right: 3px;
     padding: 0;
+    position: relative;
     
     p {
         // border: 2px solid yellow;
@@ -43,7 +41,7 @@
         font-family: 'Hahmlet', serif;   
         padding: 0;
         margin: 0;
-        // margin-top: 20px;
+        
         text-align: center;
 
         &::before {
@@ -69,54 +67,5 @@
     
 
 
-
-}
-
-#text-container {
-    @keyframes Kimchi {
-        0% {
-            color: blue;
-        }
-        50%{
-            color: #e2a66b;
-        }
-        100%{
-            color: rgb(199, 199, 61);
-            
-        }
-    }
-
-    border-bottom: 2px solid #e2a66b;
-    width: auto;
-    
-    // position: absolute;
-    top: 150px;
-    left: 100px;
-    
-    
-
-    
-    
-    
-    #kimchers {
-        font-size: 200px;
-        font-weight: bold;
-        border: 2px solid white;
-        margin: 0px;
-        padding: 0px;;
-        font-family: 'Anton', sans-serif;
-        
-        animation: Kimchi 3s alternate infinite linear;
-    
-       
-    }
-    #subtitle {
-        font-family: 'Hahmlet', serif;    
-        // position: absolute;
-        width: auto;
-        bottom: 0px;    
-        left: 15px;
-        animation: Kimchi 3s alternate infinite linear;
-    }
 
 }

@@ -1,6 +1,3 @@
-.abs {
-    position: absolute;
-}
 
 @keyframes Paw-fade {
     0%{
@@ -12,47 +9,51 @@
     }
 }
 #art-container {
-    // border: 2px solid black;
-    width: 30%;
-    height: 75%;
-    transform: rotate(-80deg);
+    // border: 2px solid red;
+    width: 50%;
+    min-width: 350px;
+    height: 50vh;
    
-    top: 10%; 
-    right: 150px;
+    position: relative;
 
+    .paws {
+        width: 15%;
+        position: relative;
+    }
+    
     #paw-one {
         animation: Paw-fade 3s forwards 0.5s infinite linear;
-        bottom: 0%;
-        left: 0%;
         transform: rotate(-10deg);
+        left: 55%;
+        top: 80%;
+       
     }
     #paw-two {
         animation: Paw-fade 3s forwards 0.9s infinite linear;
-        bottom: 25%;
-        left: 25%;
         transform: rotate(20deg);
+        left: 15%;
+        top: 60%;
     }
     #paw-three {
-        bottom: 50%;
-        left: 5%;
         animation: Paw-fade 3s forwards 1.2s infinite linear;
+        left: 15%;
+        top: 30%;
 
     }
     #paw-four {
-        bottom: 55%;
-        left: 45%;
         animation: Paw-fade 3s forwards 1.7s infinite linear;
         transform: rotate(30deg);
+        left: -25%;
+        top: 20%;
 
     }
     #paw-five {
-        top: -10%;
-        left: 35%;
+        
         animation: Paw-fade 3s forwards 2.1s infinite linear;
+        left: -25%;
+        top: -10%;
 
     }
-    .paws {
-        height: 150px;
-    }
+    
     
 }

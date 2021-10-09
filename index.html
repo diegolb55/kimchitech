@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KimchiTech</title>
     <link rel="stylesheet" href="dist/css/main.css">
-    <link rel="stylesheet" href="dist/css/pawArt.css">
-    <link rel="stylesheet" href="dist/css/section-one.css">
-    <link rel="stylesheet" href="dist/css/section-two.css">
+    
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,27 +22,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="navbar" class="fixed">
-        <ul id="item-container">
-            <li class="nav-links rel" id="page-three"><p>Home</p></li>
-            <li class="nav-links rel" id="page-two"><a href="/gallery.html"><p>Gallery</p></a></li>
-            <li class="nav-links rel" id="page-one"><a href="/contact.html"><p>Contact</p></a></li> 
-        </ul>
-    </nav>
-    <section id="section-one" class="abs">
-        <div id="text-container" class="abs">
-            <h1 id="kimchers">KIMCHI</h1>
-            <h4 id="subtitle" class="abs">the worlds best dog</h4>
-        </div>
-        <div id="art-container" class="abs">
-            <img id="paw-one" class="paws abs" src="images/paw.png" alt="kimchi-paw">
-            <img id="paw-two" class="paws abs" src="images/paw.png" alt="kimchi-paw">
-            <img id="paw-three" class="paws abs" src="images/paw.png" alt="kimchi-paw">
-            <img id="paw-four" class="paws abs" src="images/paw.png" alt="kimchi-paw">
-            <img id="paw-five" class="paws abs" src="images/paw.png" alt="kimchi-paw">
-        </div>
-    </section>
-    <section id="section-two" class="abs">
+    <div id="pagewrapper">
+        <nav id="navbar">
+            <ul id="item-container">
+                <li class="nav-links rel" id="page-three"><p>Home</p></li>
+                <li class="nav-links rel" id="page-two"><a href="/gallery.html"><p>Gallery</p></a></li>
+                <li class="nav-links rel" id="page-one"><a href="/contact.html"><p>Contact</p></a></li> 
+            </ul>
+        </nav>
+        <section id="section-one">
+            <div id="text-container">
+                <h1 id="kimchers">KIMCHI</h1>
+                <h4 id="subtitle">the worlds best dog</h4>
+            </div>
+            <div id="art-container">
+                <img id="paw-one" class="paws" src="images/paw.png" alt="kimchi-paw">
+                <img id="paw-two" class="paws" src="images/paw.png" alt="kimchi-paw">
+                <img id="paw-three" class="paws" src="images/paw.png" alt="kimchi-paw">
+                <img id="paw-four" class="paws" src="images/paw.png" alt="kimchi-paw">
+                <img id="paw-five" class="paws" src="images/paw.png" alt="kimchi-paw">
+            </div>
+        </section>
+    </div>
+    
+    
+    <!-- <section id="section-two" class="abs">
         
         <div id="bone" class="abs">
             <div id="corner-one" class="corners abs"></div>
@@ -52,7 +54,7 @@
             <div id="corner-three" class="corners abs"></div>
             <div id="corner-four" class="corners abs"></div>
 
-            <!-- <img id="kimchipic" src="images/kimchipic.jpeg" -->
+            
         </div>
         <div id="w-box" class="abs">
             <h3 id="service-title">Services</h3>
@@ -84,7 +86,7 @@
             <img src="images/kimchipic.jpeg" alt="dog protrait" class="abs">
         </div>
        
-    </section>
+    </section> -->
     <script src="scroll.js"></script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-console.log("scroll listening for navbar...");
 
 const body = document.body;
 let lastScroll = 0;

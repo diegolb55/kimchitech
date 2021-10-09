@@ -1,20 +1,12 @@
-$kimchi-brown: #e2a66b;
-
-@import 'section-one.scss';
-// @import 'section-two.scss';
 
 
-// -----------------------
-.abs {
-    position: absolute;
-    // class="abs"
-}
-.rel {
-    position: relative;
-}
-.fixed {
-    position: fixed;
-}
+@import './_navbar';
+@import './_section-one', './pawArt.scss';
+@import './_section-two';
+@import './_section-three';
+
+
+
 // Scroll Stuff
 .scroll-down #navbar {
     transform: translate3d(0, -250%, 0);
@@ -25,7 +17,7 @@ $kimchi-brown: #e2a66b;
 // -----------------------
 body{
     height: 300vh;
-    // min-width: 100vh;
+    
     margin: 0;
     padding: 0;
     background: white;
@@ -36,74 +28,6 @@ body{
 
 
 
-#section-three {
-    background: white;
-    height: 100vh;
-    width: 100%;
 
-    top: 200vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-   
-}
-#g-box{
-    background: #e7e7e7;
-    height: 100vh;
-    width: 50%;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    h3 {
-        border-radius: 2px solid black;
-        border-bottom: 2px solid white;
-        color: white;
-        font-size: 100px;
-        font-family: 'Open Sans Condensed', sans-serif;
-    }
-    p {
-        margin-top: -10px;
-        border-radius: 2px solid black;
-        text-align: center;
-        color: white;
-        font-size: 30px;
-        width: 60%;
-
-    }
-    #paw-container {
-        // border: 2px solid black;
-
-        #l-paw {
-            height: 50px;
-            transform: rotate(-35deg);
-        }
-        #r-paw {
-            height: 100px;
-        }
-
-        bottom: 10px;
-        right: 10px;
-    }
-   
-    
-
-}
-#portrait {
-    // border: 2px solid black;
-    height:100%;
-    width: 50%;
-    right: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        border-radius: 100%;
-        border: 20px solid #e7e7e7;
-        height: 70%;
-    }
-}
 
 
