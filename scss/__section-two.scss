@@ -23,6 +23,8 @@ $kimchi-brown: #e2a66b;
   
 #bone {
     transition: transform 2s ease-in-out;
+
+    border: 2px solid black;
     background: white;
     height: 70%;
     width: 10%;
@@ -160,6 +162,9 @@ $kimchi-brown: #e2a66b;
              height: 10px;
              width: 10px;
          }
+     }
+     #bone {
+         display: none !important;
      }
 
 }
