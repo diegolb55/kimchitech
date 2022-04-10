@@ -70,7 +70,6 @@
 }
 
 #pagewrapper {
-  border: 2px solid black;
   height: 200vh;
   background: white;
 }
@@ -93,7 +92,6 @@
 }
 
 #text-container {
-  border: 2px solid black;
   border-bottom: 2px solid #e2a66b;
   width: 40%;
   height: 50vh;
@@ -126,7 +124,6 @@
 }
 
 #text-container #kimchers {
-  border: 2px solid green;
   font-family: 'Anton', sans-serif;
   font-size: 10rem;
   font-weight: bold;
@@ -136,7 +133,6 @@
 }
 
 #text-container #subtitle {
-  border: 2px solid blue;
   font-family: 'Hahmlet', serif;
   width: auto;
   margin: 0;
@@ -219,7 +215,6 @@
 }
 
 #w-box {
-  border: 2px solid orange;
   background: white;
   border-radius: 25%;
   -webkit-box-shadow: 0 0 30px #9c7247;
@@ -243,18 +238,20 @@
 #w-box #service-list {
   border: 2px solid blue;
   width: 70%;
+  height: 20rem;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+      grid-template-areas: ". ." ". ." ". .";
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  place-items: center;
 }
 
 #w-box:hover {
@@ -266,7 +263,6 @@
   height: 70px;
   width: 150px;
   border-radius: 25px;
-  margin: 20px;
   background: lightgray;
   color: darkgrey;
   font-weight: bolder;
