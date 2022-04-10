@@ -10,6 +10,7 @@
 .scroll-up #navbar {
     transform: translate3d(0, 150%, 0);
 }
+
 // -----------------------
 body, html{
     
@@ -19,6 +20,69 @@ body, html{
 
 
 
+#navbar {
+    z-index: 9999;
+    width: 30%;
+    height: auto;
+    right: 30px;
+    top: 50px;
+    transition: all 1s;
+    
+    #item-container {
+        list-style: none;
+        height: auto;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+.nav-links {
+     a{
+         text-decoration: none;
+     }
+    // border: 1px solid red;
+    height:30px;
+    width: 33%;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 0;
+    
+    p {
+        // border: 2px solid yellow;
+        height: 30px;
+       
+        font-family: 'Hahmlet', serif;   
+        padding: 0;
+        margin: 0;
+        // margin-top: 20px;
+        text-align: center;
+
+        &::before {
+            content: '';
+            display: block;
+            background:rgb(159, 211, 159);
+            height: 2px;
+            width: 20px;
+
+            position: absolute;
+            bottom: 0px;
+            transition: width 1s, background 1s;
+        }
+        &:hover {
+            &::before {
+                background: red;
+                width: 100%;
+            }
+        }
+      
+    }
+
+    
+
+
+
+}
 
 
 
