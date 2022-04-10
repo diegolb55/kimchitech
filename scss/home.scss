@@ -1,0 +1,286 @@
+@import  './__pawArt.scss';
+
+
+
+$kimchi-brown: #e2a66b;
+#pagewrapper {
+    border: 2px solid black;
+    height: 200vh;
+    
+    background: white;
+    
+
+}
+
+#section-one {
+    // border: 2px dotted red;
+    width: 100%;
+    height: 100vh;
+    
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    
+}
+
+
+#text-container {
+    @keyframes Kimchi {
+        0% {
+            color: blue;
+        }
+        50%{
+            color: $kimchi-brown;
+        }
+        100%{
+            color: rgb(199, 199, 61);
+            
+        }
+    }
+    border: 2px solid black;
+    border-bottom: 2px solid #e2a66b;
+    width: 40%;
+    height: 50vh;
+    min-width: 350px;
+    margin: 20px;
+    
+    
+    
+    
+    
+    #kimchers {
+        border: 2px solid green;
+        font-family: 'Anton', sans-serif;
+        font-size: 10rem;
+        font-weight: bold;
+        margin: 0;
+            
+        animation: Kimchi 3s alternate infinite linear;
+    
+       
+    }
+    #subtitle {
+        border: 2px solid blue;
+        font-family: 'Hahmlet', serif;    
+        width: auto;
+        margin: 0;
+        
+        animation: Kimchi 3s alternate infinite linear;
+    }
+
+}
+
+
+
+$kimchi-brown: #e2a66b;
+
+#section-two {
+    background: $kimchi-brown;
+    
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    overflow: hidden;
+    &:hover {
+        .bone {
+            transform: rotate(-50deg);
+        }
+        .bone-l {
+            transform: rotate(50deg);
+        }
+    }
+    
+}
+
+
+.bone {
+    transition: transform 2s ease-in-out;
+
+    background: white;
+    height: 500px;
+    width: 50px;
+    min-width: 150px;
+    
+    z-index: 1;
+    position: relative;
+    right: -40%;
+    
+    
+    .corners {
+        border-radius: 100%;
+        background: white;
+        height: 150px;
+        width: 150px;
+        position: absolute;
+    
+    }
+    #corner-one {
+        top: -50px;
+        left: -60px;
+    }
+    #corner-two {
+        border-top: 8px solid $kimchi-brown;
+        transform: rotate(-25deg);
+        top: -50px;
+        right: -60px;
+    }
+    #corner-three {
+        bottom: -60px;
+        left: -60px;
+    }
+    #corner-four {
+        bottom: -50px;
+        right: -60px;
+    }
+    
+}
+.bone-l {
+    left: -40%;
+}
+
+#w-box {
+    border: 2px solid orange;
+    background: white;
+    border-radius: 25%;
+    box-shadow: 0 0 30px #9c7247;
+    padding: 10px 20px;
+    height: 400px;
+    width: 600px;
+
+    position: absolute;
+    z-index: 2;
+    
+
+    
+    
+
+    #service-title {
+        color: $kimchi-brown;
+        border: 2px solid black;
+        margin: 0;
+        text-align: center;
+        font-family: 'Staatliches', cursive;
+        font-size: 2.5rem;
+    }
+    
+    #service-list {
+        border: 2px solid blue;
+        width: 70%;
+        margin: 0 auto;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+
+    &:hover {
+        box-shadow: 0 0 35px #725334;
+    }
+}
+
+        
+
+
+.service-items {
+    height: 70px;
+    width: 150px;
+
+    border-radius: 25px;
+    margin: 20px;
+    
+
+    background: lightgray;
+    color: darkgrey;
+    font-weight: bolder;
+   
+    box-shadow: 0px 0px 10px rgb(136, 109, 109);
+    transition: transform 0.5s, border 0.5s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    p {
+        text-shadow: -1px -1px 0 rgb(110, 110, 110);
+    }
+
+    &::before {
+        position: relative;
+        left: -5px;
+        content: '';
+        display: block;
+        background: white;
+        height: 20px; 
+        width: 20px;
+        border-radius: 100%;
+
+        border-left: 3px solid rgb(150, 150, 150);
+    }
+    
+    &:hover {
+        transform: rotate(35deg);
+        border-left: 3px solid rgb(150, 150, 150);
+        border-bottom: 3px solid rgb(150, 150, 150);
+
+        // box-shadow: 
+        &::before{
+            border-bottom: 3px solid rgb(150, 150, 150);    }
+
+        }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+    #section-one {
+        flex-direction: row;
+
+        #text-container {
+            height: 30vh;
+        }
+        #kimchers {
+            text-align: center;
+            font-size: 6rem;
+        }
+        #subtitle {
+            text-align: center;
+        }
+        #art-container {
+            height: 40vh;
+            top: -70px;
+            .paws {
+                width: 18%;
+            }   
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    #w-box {
+        width: 80%;
+        padding: 0;
+        #service-list{
+            width: auto;
+            
+        }
+    }
+    
+    .bone {
+        display: none !important;
+    }
+
+}
